@@ -13,5 +13,6 @@ CREATE TABLE IF NOT EXISTS dvd_rental.dim_movie (
     special_features STRING,
     fulltext STRING
 )
+PARTITIONED BY (last_update DATE)
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ',';

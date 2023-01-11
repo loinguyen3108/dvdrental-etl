@@ -1,4 +1,4 @@
-from services.hdfs import BaseHDFS
+from etl.services.hdfs import BaseHDFS
 
 
 class HDFSSerivce(BaseHDFS):

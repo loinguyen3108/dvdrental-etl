@@ -20,6 +20,8 @@ class Log4j(object):
         app_name = conf.get('spark.app.name')
 
         log4j = spark._jvm.org.apache.log4j
+        log4j.LogManager.getLogger("org"). setLevel(log4j.Level.ERROR)
+        log4j.LogManager.getLogger("akka").setLevel(log4j.Level.ERROR)
         message_prefix = '[' + app_name + '-' + app_id + ']'
         self.logger = log4j.LogManager.getLogger(message_prefix)
 

@@ -2,11 +2,12 @@ from datetime import datetime
 from functools import cached_property
 
 from pyspark.sql.dataframe import DataFrame
-from pyspark.sql.functions import col, count, max, lit, to_date
+from pyspark.sql.functions import col, count, lit, max, to_date
 
-from dependencies.settings import DATALAKE_PATH, JDBC_URL, JDBC_USER, JDBC_PASSWORD, HDFS_MASTER
-from jobs import BaseETL
-from services.hdfs.hdfs import HDFSSerivce
+from etl.dependencies.settings import DATALAKE_PATH, HDFS_MASTER, \
+    JDBC_PASSWORD, JDBC_URL, JDBC_USER
+from etl.jobs import BaseETL
+from etl.services.hdfs.hdfs import HDFSSerivce
 
 BY_DATE = 'by_date'
 BY_ID = 'by_id'

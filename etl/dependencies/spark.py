@@ -12,7 +12,7 @@ from pyspark import SparkFiles
 from pyspark.sql import SparkSession
 
 import __main__
-from dependencies import logging
+from etl.dependencies import logging
 
 
 def start_spark(app_name='my_spark_app', master='local[*]', jar_packages=[],

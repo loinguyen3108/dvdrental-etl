@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from datetime import datetime
 
-from jobs.ingestion.ingestion import Ingestion
+from etl.jobs.ingestion.ingestion import Ingestion
 
 
 arg_parser = ArgumentParser(description='Data Ingestion')

@@ -1,5 +1,6 @@
-from dependencies.settings import APP_NAME, JAR_PACKAGES, SPARK_CONFIGS, SPARK_FILES
-from dependencies.spark import start_spark
+from etl.dependencies.settings import APP_NAME, JAR_PACKAGES, SPARK_CONFIGS, \
+    SPARK_FILES
+from etl.dependencies.spark import start_spark
 
 
 class BaseETL:
