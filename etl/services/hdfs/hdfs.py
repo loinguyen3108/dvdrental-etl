@@ -1,4 +1,4 @@
-from services.hdfs import BaseHDFS
+from etl.services.hdfs import BaseHDFS
 
 
 class HDFSSerivce(BaseHDFS):
@@ -6,4 +6,4 @@ class HDFSSerivce(BaseHDFS):
         super().__init__()
 
     def is_exists(self, path: str):
-        return True if self.client.status(path) else False
+        return True if self.client.status(path, strict=False) else False

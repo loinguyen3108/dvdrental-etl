@@ -1,6 +1,6 @@
 from hdfs import InsecureClient
 
-from dependencies.settings import HDFS_URL
+from etl.dependencies.settings import HDFS_URL
 
 
 class BaseHDFS:

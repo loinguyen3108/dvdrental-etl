@@ -12,11 +12,11 @@ from pyspark import SparkFiles
 from pyspark.sql import SparkSession
 
 import __main__
-from dependencies import logging
+from etl.dependencies import logging
 
 
 def start_spark(app_name='my_spark_app', master='local[*]', jar_packages=[],
-                files=[], spark_config={}):
+                files=[], spark_config={}, enable_hive=False):
     """Start Spark session, get Spark logger and load config files.
 
     Start a Spark session on the worker node and register the Spark
@@ -51,6 +51,7 @@ def start_spark(app_name='my_spark_app', master='local[*]', jar_packages=[],
     :param files: List of files to send to Spark cluster (master and
         workers).
     :param spark_config: Dictionary of config key-value pairs.
+    :param enable_hive: Allow use hive.
     :return: A tuple of references to the Spark session, logger and
         config dict (only if available).
     """
@@ -83,6 +84,10 @@ def start_spark(app_name='my_spark_app', master='local[*]', jar_packages=[],
         # add other config params
         for key, val in spark_config.items():
             spark_builder.config(key, val)
+
+    # config hive table
+    if enable_hive:
+        spark_builder.enableHiveSupport()
 
     # create session and retrieve Spark logger object
     spark_sess = spark_builder.getOrCreate()
