@@ -6,4 +6,4 @@ class HDFSSerivce(BaseHDFS):
         super().__init__()
 
     def is_exists(self, path: str):
-        return True if self.client.status(path) else False
+        return True if self.client.status(path, strict=False) else False
