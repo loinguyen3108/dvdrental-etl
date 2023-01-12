@@ -48,6 +48,23 @@ export JDBC_PASSWORD=...
 ./update_local_packages.sh
 ```
 
+**7. Args help**
+```
+cd manager
+python ingestion.py -h
+python transform.py -h
+cd ..
+```
+
+**8. Run**
+```
+# ingest data from postgres to datalake
+spark-submit --py-files packages.zip manager/ingestion --exec-date YYYY:MM:DD --table-name <table_name> --p-key <key name> --loading-type <type>
+
+# transform data from datalake to hive
+spark-submit --py-files packages.zip manager/ingestion --exec-date YYYY:MM:DD
+```
+
 ## ✍️ Example
 - Data Lake
 # ![Data Lake](https://github.com/loinguyen3108/dvdrental-etl/blob/main/images/datalake.png?raw=true)
