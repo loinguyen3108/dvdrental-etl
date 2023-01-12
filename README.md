@@ -2,7 +2,7 @@
 
 > This is example project for hadoop, spark, hive and superset
 
-[![github release date](https://img.shields.io/github/release-date-pre/loinguyen3108/dvdrental-etl)](https://github.com/nhn/tui.editor/releases/latest) [![commit active](https://img.shields.io/github/commit-activity/w/loinguyen3108/dvdrental-etl)](https://github.com/loinguyen3108/dvdrental-etl/releases/tag/pyspark) [![python version](https://img.shields.io/pypi/pyversions/p)](https://www.npmjs.com/package/@toast-ui/editor) [![license](https://img.shields.io/badge/license-Apache-blue)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/loinguyen3108/dvdrental-etl/issues) [![code with hearth by Loi Nguyen](https://img.shields.io/badge/DE-Loi%20Nguyen-orange)](https://github.com/loinguyen3108)
+[![github release date](https://img.shields.io/github/release-date-pre/loinguyen3108/dvdrental-etl)](https://github.com/nhn/tui.editor/releases/latest) [![commit active](https://img.shields.io/github/commit-activity/w/loinguyen3108/dvdrental-etl)](https://github.com/loinguyen3108/dvdrental-etl/releases/tag/pyspark) [![license](https://img.shields.io/badge/license-Apache-blue)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/loinguyen3108/dvdrental-etl/issues) [![code with hearth by Loi Nguyen](https://img.shields.io/badge/DE-Loi%20Nguyen-orange)](https://github.com/loinguyen3108)
 
 ## 🚩 Table of Contents
 
