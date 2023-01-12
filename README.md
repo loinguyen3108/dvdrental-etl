@@ -12,7 +12,7 @@
 
 ## 🎨 Stack
 
-    Project run in local based on `docker-compose.yml` in [bigdata-stack](https://github.com/loinguyen3108/bigdata-stack)
+Project run in local based on `docker-compose.yml` in [bigdata-stack](https://github.com/loinguyen3108/bigdata-stack)
 
 ### ⚙️ Setup
 
@@ -25,10 +25,10 @@ cd bigdata-stack
 docker compose up -d
 ```
 
-**2. Spark Standalone**
+**2. Spark Standalone**  
 Setup at [spark](https://spark.apache.org/docs/latest/spark-standalone.html)
 
-**3. Dataset**
+**3. Dataset**  
 Data is downloaded at [PostgreSQL Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
 **4. Environment**
