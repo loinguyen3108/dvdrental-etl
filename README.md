@@ -26,7 +26,7 @@ docker compose up -d
 ```
 
 **2. Spark Standalone**  
-Setup at [spark](https://spark.apache.org/docs/latest/spark-standalone.html)
+Setup at [spark document](https://spark.apache.org/docs/latest/spark-standalone.html)
 
 **3. Dataset**  
 Data is downloaded at [PostgreSQL Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
